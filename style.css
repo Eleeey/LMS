@@ -141,8 +141,14 @@ img {
   width: 100%;
   margin: 0 auto;
   padding: 50px 0;
-  overflow: auto;
   
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scoll-behavior: smooth;
+  -webkit-overflow-scrolling: scroll;
+  /* scroll-snap-align: start; */
+  scroll-snap-stop: normal;
+
 }
 
 .section-title {
@@ -153,14 +159,6 @@ img {
 
 .row {
   display: flex;
-  justify-content: space-between;
-  overflow: hidden;
-  overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      scoll-behavior: smooth;
-      -webkit-overflow-scrolling: touch;
-      /* scroll-snap-align: start; */
-      scroll-snap-stop: always;
 
 }
 
@@ -172,6 +170,7 @@ img {
   padding: 20px;
   margin-bottom: 30px;
   text-align: center;
+  
   
 }
 
