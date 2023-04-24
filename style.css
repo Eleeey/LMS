@@ -149,12 +149,6 @@ img {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 30px;
-  overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      scoll-behavior: smooth;
-      -webkit-overflow-scrolling: touch;
-      /* scroll-snap-align: start; */
-      scroll-snap-stop: always;
 }
 
 .row {
