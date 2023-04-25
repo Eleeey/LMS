@@ -139,16 +139,26 @@ img {
 }
 
 .how_it_works{
-  width: 100%;
-  
+  padding: 0 20px;
+  overflow-x: auto;
+  width: 100vw;
+    scroll-snap-type: x mandatory;
+  scroll-snap-type: touch;
+  scroll-behavior: smooth;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 .how_it_works h1{
   display: flex;
+  position: fixed;
+  z-index: 1;
 }
 .cards{
+  margin-top: 10rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  scroll-snap-align: always;
 }
 .card{
   border: 1px solid black;
@@ -226,8 +236,16 @@ img {
     height: auto;
     box-shadow: 4px 4px 1px #333;
   }
+  .how_it_works{
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-snap-type: touch;
+    scroll-behavior: smooth;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
   .cards{
-    scr
+    display: flex;
     width: 1200px;
   }
   .card{
