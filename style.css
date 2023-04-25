@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #07d8bc;
   border: 1px soid black;
 }
 /* styles for the navbar */
@@ -331,6 +330,10 @@ p {
   .left_side{
     flex-direction: column;
     order: 2;
+    margin-bottom: 20px;
+  }
+  .left_side a{
+    width: 30%;  
   }
   .image-container {
     order: 3;
