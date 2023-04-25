@@ -137,60 +137,31 @@ img {
   line-height: 1;
   text-align: center;
 }
-.container {
+
+.how_it_works{
   width: 100%;
-  margin: 0 auto;
-  padding: 50px 0;
   
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scoll-behavior: smooth;
-  -webkit-overflow-scrolling: scroll;
-  /* scroll-snap-align: start; */
-  scroll-snap-stop: normal;
-
 }
-
-.section-title {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 30px;
-}
-
-.row {
+.how_it_works h1{
   display: flex;
-
 }
-
-.card {
-  flex-basis: calc(25% - 30px);
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin-bottom: 30px;
+.cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card{
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 25%;
   text-align: center;
-  
-  
+  height: auto;
+  padding: 10px ;
 }
-
-.card i {
-  font-size: 3rem;
-  margin-bottom: 10px;
-  display: block;
+.card svg{
+  width: 1rem;
+  border-radius: 50px;
 }
-
-.card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.card p {
-  font-size: 1rem;
-  line-height: 1.5;
-  text-align: justify;
-}
-
 
 
 /* sm screen styles */
@@ -255,4 +226,16 @@ img {
     height: auto;
     box-shadow: 4px 4px 1px #333;
   }
+  .cards{
+    scr
+    width: 1200px;
+  }
+  .card{
+    margin-left: 2rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 40%;
+    
+  }
+  
 }
