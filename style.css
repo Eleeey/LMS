@@ -54,6 +54,10 @@ nav {
   text-align: center;
   box-shadow: 2px 2px 1px #333;
 }
+ i{
+  width: 10px;
+  height: 20px;
+}
 
 .shadowed_btn:hover,
 .shadowed_btn:hover {
