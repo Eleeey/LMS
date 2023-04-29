@@ -62,6 +62,7 @@ nav {
 .shadowed_btn:hover,
 .shadowed_btn:hover {
   background-color: #222;
+  cursor: pointer;
 }
 /* nav styles end */
 .container {
@@ -177,7 +178,7 @@ p {
   width: 100%;
   height: 100%;
 }
-.left_side a{
+.left_side .shadowed_btn{
   width: auto;
   height:auto;
 }
@@ -257,22 +258,22 @@ p {
   color: #f3e8e8;
 }
 .service:nth-child(2){
-  background-color: ;
+  background-color:  #222;;
 }
 .service:nth-child(3){
-  background-color: ;
+  background-color: #222;
 }
 .service:nth-child(4){
-  background-color: ;
+  background-color: #222;
 }
 .service:nth-child(5){
-  background-color: ;
+  background-color:#222 ;
 }
 .service:nth-child(6){
-  background-color: ;
+  background-color: #222;
 }
 .service:nth-child(7){
-  background-color: ;
+  background-color: #222;
 }
 
 .reviews_cont{
@@ -291,7 +292,8 @@ p {
   justify-content: center;
   padding: 20px;
   margin-right: 1rem;
-  box-shadow: 2px 2px 1px #333;
+  box-shadow: 4px 3px 1px #333;
+  background-color: #2d4946;
 
 }
 .review:nth-child(4){
@@ -303,8 +305,9 @@ p {
   margin: 1rem 0;
 }
 .review img{
-  height: 3rem;
+  height: 5rem;
   width:5rem;
+  border-radius: 100px;
 
 }
 footer{
@@ -352,14 +355,15 @@ input::placeholder{
   .menu ul{
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: rem;
     left: 0;
     top: 0;
     margin-top: -1500px;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgba(127, 255, 212, 0.158);
+    background-color: rgb(127, 255, 240);
+    transition: 1s ease-in-out;
     
   }
   nav button{
@@ -367,7 +371,7 @@ input::placeholder{
     border: none;
     cursor: pointer;
     position: relative;
-    top: 1px;
+    top: .7rem;
   }
   .links.drop{
     margin: 0;
@@ -471,7 +475,7 @@ input::placeholder{
   }
   .reviews_cont{
     margin-left: 1rem;
-    overflow-x: hidden;
+    overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-snap-type: touch;
     scroll-behavior: smooth;
