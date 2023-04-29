@@ -97,10 +97,11 @@ p {
 
 
 
-.get_started img {
-  max-width: 100%;
+.right img {
+  border-radius: 10px;
+  max-width: 80%;
   height: auto;
-  /* box-shadow: 4px 4px 1px #333; */
+  box-shadow: 4px 4px 1px #333;
 }
 
 
@@ -269,27 +270,28 @@ p {
 .service:nth-child(7){
   background-color: ;
 }
-.reviews{
-  display: grid;
-  grid-template-rows: repeat(4, 1fr);
+
+.reviews_cont{
+  display: flex;
   
 }
-.review img{
-  width: 10px;
-  border: #0e0d0d solid 1px;
+.reviews{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
-
-.review_cards{
-display: flex;
-flex-direction: row;
-}
-.review:not(svg){
+.review:not(){
+  width: 25rem;
   height: auto;
-  width: 20rem;
-  border: 1px solid black;
-  margin-right: 2rem ;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+  margin-right: 1rem;
+  border: #0e0d0d 1px solid;
 }
-.review svg{
+.reviews svg{
+  fill: #1adfc4;
+
   width: 1rem;
 }
 /* sm screen styles */
@@ -420,20 +422,28 @@ flex-direction: row;
     margin-bottom: 5px;
     text-transform: capitalize;
   }
-
-  .review_cards{
-    overflow-x: ;
+  .reviews_cont{
+    overflow-x: auto;
     scroll-snap-type: x mandatory;
-    scroll-snap-ype: touch;
-    scroll-behvior: smooth;
-    scroll-sna-align: start;
-    scroll-snapstop: always;
+    scroll-snap-type: touch;
+    scroll-behavior: smooth;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    padding: 20px;
+  }
+  .reviews{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
   }
   .review{
-    
-    width: 6000px;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid black;
+    padding: 20px;
+    width: 25rem;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+
   }
 }
