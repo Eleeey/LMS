@@ -135,17 +135,16 @@ p {
 }
 
 .how_it_works{
-  padding: 0 20px;
+  padding: 0 0px;
   overflow-x: auto;
   width: 100vw;
 }
 .how_it_works h1{
   display: flex;
-  position: fixed;
   z-index: 1;
 }
 .cards{
-  margin-top: 10rem;
+  margin-top: 4em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -200,9 +199,9 @@ p {
 .image-2,.image-3 {
   background-image: url(/pexels-julia-m-cameron-4143800.jpg);
   background-position: center;
-  background-size: cover;
-  width: 11rem;
-  height: 10rem;
+  background-size: 100%;
+  width: 1rem;
+  height: 1rem;
   margin: 0;
   padding: 0;
 }
@@ -273,27 +272,59 @@ p {
 
 .reviews_cont{
   display: flex;
-  
+  justify-content: space-between;
 }
 .reviews{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  margin-left: 2rem;
 }
-.review:not(){
+.review:not(svg){
   width: 25rem;
   height: auto;
   text-align: center;
   justify-content: center;
   padding: 20px;
   margin-right: 1rem;
-  border: #0e0d0d 1px solid;
+  box-shadow: 2px 2px 1px #333;
+
+}
+.review:nth-child(4){
+  display: none;
 }
 .reviews svg{
   fill: #1adfc4;
-
   width: 1rem;
+  margin: 1rem 0;
 }
+footer{
+  padding: 20px;
+}
+.footer_links{
+  display: flex;
+  padding: 20px;
+}
+.subscribe{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.subscribe input{
+  height: 2rem;
+  width: 15rem;
+  margin-right: 0;
+}
+input::placeholder{
+  text-transform: capitalize;
+  padding: 10px;
+  text-align: start;
+}
+.subscribe button{
+  border-radius: 0;
+  box-shadow: 2px 2px 1px #333;
+  margin-left: -.1rem;
+}
+
 /* sm screen styles */
 
 
@@ -343,7 +374,7 @@ p {
   }
   .container{
     flex-direction: column;
-    padding: 20px;
+    padding: 25px;
   }
   .left{
     text-align: left;
@@ -374,15 +405,21 @@ p {
     width: 40%;
     
   }
+  .how_it_works h1{
+    position: relative;
+    left: 2rem;
+  }
   .container {
     width: 100vw;
     display: flex;
     flex-direction: column;
+    
   }
   .left_side{
     flex-direction: column;
     order: 2;
     margin-bottom: 20px;
+    padding: 20px;
   }
   .left_side a{
     width: 30%;  
@@ -390,6 +427,7 @@ p {
   .image-container {
     order: 3;
     width: 100%;
+    padding: 20px;
   }
   
   .image-1 {
@@ -401,7 +439,6 @@ p {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    
     order: 1;
   }
   .services{
@@ -423,27 +460,29 @@ p {
     text-transform: capitalize;
   }
   .reviews_cont{
+    margin-left: 1rem;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-snap-type: touch;
     scroll-behavior: smooth;
     scroll-snap-align: start;
     scroll-snap-stop: always;
-    padding: 20px;
   }
   .reviews{
     
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    
   }
   .review{
-    padding: 20px;
-    width: 25rem;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 30px;
+    width: 20rem;
     height: auto;
     text-align: center;
     justify-content: center;
-
+  }
+  .review:nth-child(4){
+    display: block;
   }
 }
