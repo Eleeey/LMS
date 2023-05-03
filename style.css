@@ -75,15 +75,10 @@ nav {
 }
 
 .left {
+  margin-left: 10px;
   text-align: center;
   flex-basis: 50%;
 }
-
-.right {
-  text-align: center;
-  flex-basis: 50%;
-}
-
 .left h1 {
   font-size: 30px;
   margin-bottom: 20px;
@@ -91,10 +86,20 @@ nav {
   
 }
 
-p {
+ p {
   font-size: 1rem;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
+.left .shadowed_btn{
+  margin-left: 0;
+  margin-bottom: 2rem;
+}
+.right {
+  text-align: center;
+  flex-basis: 50%;
+}
+
+
 
 
 
@@ -115,8 +120,11 @@ p {
 }
 
 .values {
-  width: 110%;
+  width: 100%;
   display: flex;
+}
+.values p{
+  text-align: center;
 }
 
 .columns {
@@ -143,6 +151,7 @@ p {
 .how_it_works h1{
   display: flex;
   z-index: 1;
+  text-transform: capitalize;
 }
 .cards{
   margin-top: 4em;
@@ -157,8 +166,10 @@ p {
   width: 25%;
   text-align: center;
   height: auto;
-  padding: 10px ;
+  padding: 10px;
+  margin-bottom: 10px;
 }
+.card 
 .card svg{
   width: 1rem;
   border-radius: 50px;
@@ -179,8 +190,12 @@ p {
   height: 100%;
 }
 .left_side .shadowed_btn{
-  width: auto;
-  height:auto;
+  width: 10rem;
+  height:2rem;
+  margin-left: 0;
+}
+.left_side h3{
+  text-transform: capitalize;
 }
 .image-container {
   height: 100%;
@@ -195,7 +210,7 @@ p {
   background-image: url(/pexels-julia-m-cameron-4143800.jpg);
   background-position: center;
   background-size: cover;
-  width: 22rem;
+  width: 20rem;
   height: 20.5rem;
   grid-column: 1/3;
   grid-row: 1/3;
@@ -204,9 +219,10 @@ p {
 .image-2,.image-3 {
   background-image: url(/pexels-julia-m-cameron-4143800.jpg);
   background-position: center;
-  background-size: 100%;
-  width: 1rem;
-  height: 1rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 10rem;
+  height: auto;
   margin: 0;
   padding: 0;
 }
@@ -233,8 +249,8 @@ p {
 }
 .service{
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  align-items: start;
+  justify-content: left;
   flex-direction: row;
   position: relative;
   left: 0;
@@ -246,12 +262,15 @@ p {
   width: 200%;
   margin-left: 0;
   padding: 0 .75rem;
-  text-align: left;
+  
 }
 .service h5{
   font-size: 1rem;
-  margin: .5rem 0;
-  text-align: start;
+  position: relative;
+  
+}
+.service p{
+  text-align: start ;
 }
 .service:nth-child(1){
   background-color: #0e0d0d;
@@ -371,7 +390,7 @@ input::placeholder{
     border: none;
     cursor: pointer;
     position: relative;
-    top: .7rem;
+    top: .15rem;
   }
   .links.drop{
     margin: 0;
@@ -435,8 +454,9 @@ input::placeholder{
     margin-bottom: 20px;
     padding: 20px;
   }
+  
   .left_side a{
-    width: 30%;  
+    width: auto; 
   }
   .image-container {
     order: 3;
