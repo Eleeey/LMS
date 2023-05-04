@@ -408,7 +408,7 @@ input::placeholder{
     cursor: pointer;
     position: relative;
     top: .15rem;
-  }
+  }.nav
   .links.drop{
     margin: 0;
   }
