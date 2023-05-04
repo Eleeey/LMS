@@ -44,17 +44,20 @@ nav {
 }
 
 .shadowed_btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #1adfc4;
-  color: #fff;
+  color: #000000;
   padding: 8px 16px;
   border: none;
   margin-left: 10px;
   text-decoration: none;
   height: 2rem;
-  text-align: center;
   box-shadow: 2px 2px 1px #333;
+  font-size: large;
 }
- i{
+i{
   width: 10px;
   height: 20px;
 }
@@ -159,7 +162,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   scroll-snap-align: always;
-  
+  padding-left: .5rem;
 }
 .card{
   border-radius: 10px;
@@ -168,15 +171,14 @@ nav {
   height: auto;
   padding: 10px;
   margin-bottom: 10px;
-}
-.card 
+  background-color: #1adfc4;
+} 
 .card svg{
-  width: 1rem;
-  border-radius: 50px;
+  width: 1.5rem;
+  border-radius: 100px;
 }
 
 .container {
-  
   height: auto;
   width: 100vw;
   display: grid;
@@ -227,21 +229,12 @@ nav {
   padding: 0;
 }
 
-.see-more {
-  margin-top: 20px;
-  padding: 10px 20px;
-  font-size: 18px;
-  background-color: #ccc;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
+
 .bottom_part{
   display: flex;
   flex-direction: column;
 }
 .services{
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -258,13 +251,15 @@ nav {
   margin: auto;
   border-radius: 5px;
   margin-bottom: 10px;
-  height: ;
+  height: 8rem;
   width: 200%;
   margin-left: 0;
   padding: 0 .75rem;
+  padding: 20px;
   
 }
 .service h5{
+  margin-bottom: 1rem;
   font-size: 1rem;
   position: relative;
   
@@ -309,8 +304,9 @@ nav {
   height: auto;
   text-align: center;
   justify-content: center;
-  padding: 20px;
+  padding: 1rem;
   margin-right: 1rem;
+  margin-bottom: 1rem;
   box-shadow: 4px 3px 1px #333;
   background-color: #2d4946;
 
@@ -342,7 +338,7 @@ footer{
   padding: 20px;
 }
 .subscribe input{
-  height: 2rem;
+  height: 2.2rem;
   width: 15rem;
   margin-right: 0;
 }
@@ -355,7 +351,13 @@ input::placeholder{
   border-radius: 0;
   box-shadow: 2px 2px 1px #333;
   margin-left: -.1rem;
+  position: relative;
+  top: .1rem;
 }
+
+
+
+
 
 /* sm screen styles */
 
@@ -517,5 +519,74 @@ input::placeholder{
   }
   .review:nth-child(4){
     display: block;
+  }
+  .subscribe{
+    align-items: center;
+  }
+  .footer_links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+   .footer_menu ul{
+    list-style: none;
+  }
+  .footer_menu h4{
+    width: auto;
+    padding-bottom:.2rem ;
+    text-align: center;
+    margin: 1.5rem 0 2rem 0;
+    border-bottom: 2px black solid;
+  }
+  .footer_menu ul li {
+    text-decoration: none;
+    text-align: center;
+    margin: 2rem 0 0 0;
+  }
+  .connect{
+    margin-top: 3rem;
+  }
+  a{
+    text-decoration: none;
+  }
+}
+@media only screen and (min-width: 609px){
+  nav{
+    /* border-bottom: 3px solid black; */
+  }
+  nav button{
+    display: none;
+  }
+  .buttons{
+    margin-left: -3rem;
+  }
+  .menu{
+    margin-left: -3rem;
+  }
+  .links a{
+    margin-left:1rem ;
+  }
+  .container{
+    height: 35rem;
+    border:3px solid black ;
+  }
+  
+  .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 35rem;
+    width: 100%;
+    border-right:3px solid black ;
+  }
+  .left, .right{
+    margin-top: -3.2rem;
+  }
+  .right img{
+    height:18rem
+  }
+  .left h1{
+    font-size: 1.5rem;
   }
 }
