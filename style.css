@@ -3,7 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px soid black;
+  /* border-top: 1px solid black;
+  border-bottom: none; */
 }
 /* styles for the navbar */
 nav {
@@ -56,6 +57,10 @@ nav {
   height: 2rem;
   box-shadow: 2px 2px 1px #333;
   font-size: large;
+}
+#sign_in{
+  background-color: #fff;
+  border: #1adfc4 solid 1px;
 }
 i{
   width: 10px;
@@ -151,7 +156,7 @@ i{
   overflow-x: auto;
   width: 100vw;
 }
-.how_it_works h1{
+.how_it_works_h1{
   display: flex;
   z-index: 1;
   text-transform: capitalize;
@@ -289,7 +294,9 @@ i{
 .service:nth-child(7){
   background-color: #222;
 }
-
+.r_heading{
+  margin-left: 45%
+}
 .reviews_cont{
   display: flex;
   justify-content: space-between;
@@ -307,7 +314,7 @@ i{
   padding: 1rem;
   margin-right: 1rem;
   margin-bottom: 1rem;
-  box-shadow: 4px 3px 1px #333;
+  box-shadow: 4px 4px 1px #333;
   background-color: #2d4946;
 
 }
@@ -342,6 +349,9 @@ footer{
   width: 15rem;
   margin-right: 0;
 }
+.subscribe h2{
+  margin-bottom: 1rem;
+}
 input::placeholder{
   text-transform: capitalize;
   padding: 10px;
@@ -350,9 +360,8 @@ input::placeholder{
 .subscribe button{
   border-radius: 0;
   box-shadow: 2px 2px 1px #333;
-  margin-left: -.1rem;
-  position: relative;
-  top: .1rem;
+  margin-left: .1rem;
+  
 }
 
 
@@ -523,6 +532,10 @@ input::placeholder{
   .subscribe{
     align-items: center;
   }
+form{
+  display: flex;
+  
+}
   .footer_links{
     display: flex;
     flex-direction: column;
@@ -579,14 +592,35 @@ input::placeholder{
     height: 35rem;
     width: 100%;
     border-right:3px solid black ;
+    padding: 1rem;
   }
   .left, .right{
     margin-top: -3.2rem;
   }
   .right img{
+    width: auto;
     height:18rem
   }
   .left h1{
+    text-align: left;
     font-size: 1.5rem;
+  }
+  .how_it_works h1{
+
+  }
+}
+@media only screen and (min-width: 768px){
+  *{
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px){
+  *{
+    display: block;
+  }
+}
+@media only screen and (min-width: 1200px){
+  *{
+    display: none;
   }
 }
